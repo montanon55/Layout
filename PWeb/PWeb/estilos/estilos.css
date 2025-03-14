@@ -1,0 +1,29 @@
+body {
+	background-color: #ece3e1;
+}
+.parent {
+	border:1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+	border:1px solid black;
+    grid-column: span 4 / span 4;
+}
+
+.div2 {
+	border:1px solid black;
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+}
+
+.div3 {
+	border:1px solid black;
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+        
